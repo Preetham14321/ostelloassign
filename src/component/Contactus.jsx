@@ -30,57 +30,58 @@ const Contactus = () => {
 
   return (
     <>
-      <div className="container sm:p-10 md:p-0 md:pl-28 md:pr-20 bg-gradient-to-b from-cyan-200 to-white h-96 absolute ">
+      <div className="container sm:p-10 xl:p-0 xl:pl-28 xl:pr-20 bg-gradient-to-b from-cyan-200 to-white h-96 absolute ">
         <div className="float-left pl-10 mt-7 pr-10">
           <img src={Logo} alt="Logo" width="130" height="200" />
-        </div>
-        <div
-          className={
-            (showMenu ? "visible " : "invisible md:visible") +
-            " md:flex md:gap-20 md:pl-4 md:mt-10 relative top-20  ml-32 mr-4 md:mr-0  bg-purple-400 z-30  md:top-0 md:bg-opacity-0 rounded-lg  "
-          }
-        >
-          <div className="mb-2 md:mb-0">Buy a Course</div>
-          <div className="mb-2 md:mb-0">Community</div>
-          <div className="mb-2 md:mb-0">Scholarship</div>
-          <div className="md:ml-72 ml-20 mb-2 md:mb-0 ">
-            List your Institute
-          </div>
-
-          <button className="bg-purple-600 text-white pl-3 pr-3 pb-1 rounded-md ml-24 md:ml-0 mb-2 md:mb-0 ">
-            Login
-          </button>
         </div>
 
         {showMenu ? (
           <HiX
-            className=" text-lg   absolute top-10 left-80  lg:hidden"
+            className="text-lg float-right mt-10 mr-10  lg:hidden"
             onClick={() => {
               setShowMenu(!showMenu);
             }}
           />
         ) : (
           <HiMenu
-            className=" text-lg absolute top-10 left-80 lg:hidden"
+            className=" text-lg float-right mt-10 mr-10  lg:hidden"
             onClick={() => {
               setShowMenu(!showMenu);
             }}
           />
         )}
-        <div className="bg-white w-80 md:w-full ml-4     md:ml-12 relative  pl-10 pr-10 pt-10 md:top-32 z-10 md:pl-20 md:pr-20 md:pt-10 rounded-3xl ">
+        <div
+          className={
+            (showMenu ? "visible " : "invisible xl:visible") +
+            " xl:flex xl:gap-20 xl:pl-4 xl:mt-10 relative top-20  ml-32 mr-4 xl:mr-0  bg-purple-400 z-30  xl:top-0 xl:bg-opacity-0 rounded-lg  "
+          }
+        >
+          <div className="mb-2 xl:mb-0">Buy a Course</div>
+          <div className="mb-2 xl:mb-0">Community</div>
+          <div className="mb-2 xl:mb-0">Scholarship</div>
+          <div className="xl:ml-72 ml-20 mb-2 xl:mb-0 ">
+            List your Institute
+          </div>
+
+          <button className="bg-purple-600 text-white pl-3 pr-3 pb-1 rounded-xl ml-24 xl:ml-0 mb-2 xl:mb-0 ">
+            Login
+          </button>
+        </div>
+
+        <div className="bg-white w-80 xl:w-full      xl:ml-12 relative  block m-auto   pt-10 xl:top-32 z-10 xl:pl-20 xl:pr-20 xl:pt-10 rounded-3xl ">
           <div className="">
-            <p className="font-semibold">say hi to the team:)</p>
-            <h1 className="font-semibold text-4xl md:text-7xl text-purple-600 mb-6 mt-4">
+            <p className="font-semibold pl-8 xl:pl-0 ">say hi to the team:)</p>
+            <h1 className="font-semibold text-4xl xl:text-7xl text-purple-600 mb-6 pl-8 xl:pl-0 mt-4">
               Get In Touch
             </h1>
-            <p className="md:ml-28 ml-10 mb-10 md:mb-0 font-semibold">
+            <p className="xl:ml-28 ml-10 mb-10 xl:mb-0 font-semibold">
               feel free to contact us and we will <br /> get back to you as soon
               as we can
             </p>
           </div>
           <form
             action=""
-            className="md:flex md:flex-col -ml-8 md:-ml-0 md:mt-10"
+            className="xl:flex xl:flex-col pl-2 w-64 xl:-ml-0 xl:mt-10"
           >
             <label htmlFor="name" className="">
               Your Name
@@ -90,7 +91,7 @@ const Contactus = () => {
               onChange={(e) => {
                 setNameValue(e.target.value);
               }}
-              className="bg-purple-100 w-80 h-8 rounded-md  mt-2 mb-2"
+              className="bg-purple-100 w-80 h-8 rounded-xl  mt-2 mb-2"
             />
             {name && (
               <p className="text-red-900 font-semibold">
@@ -103,7 +104,7 @@ const Contactus = () => {
                 setEmailValue(e.target.value);
               }}
               type="email"
-              className="bg-purple-100 w-80 h-8 rounded-md   mt-2 mb-2"
+              className="bg-purple-100 w-80 h-8 rounded-xl   mt-2 mb-2"
             />
             {email && (
               <p className="text-red-900 font-semibold">
@@ -117,7 +118,7 @@ const Contactus = () => {
                 setMessageValue(e.target.value);
               }}
               placeholder="Type something if you want..."
-              className="bg-purple-100 w-80 h-32 rounded-md p-4 mt-2"
+              className="bg-purple-100 w-80 h-32 rounded-xl p-4 mt-2"
             ></textarea>
             {message && (
               <p className="text-red-900 font-semibold">
@@ -127,12 +128,12 @@ const Contactus = () => {
           </form>
           <button
             onClick={submitHandler}
-            className="bg-purple-600 text-white w-32 rounded-lg mt-6 mb-10 md:mb-0 h-8"
+            className="bg-purple-600 text-white w-32 rounded-lg mt-6 xl:mb-0 h-8"
           >
             Submit
           </button>
-          <div className=" relative md:float-right md:bottom-96 md:-mt-28 md:-left-20 top-12 md:top-full  ">
-            <div className="bg-gray-400 -ml-9 md:-ml-0 p-12 md:p-20 w-80 h-52  ">
+          <div className=" block m-auto relative xl:float-right xl:bottom-96 xl:-mt-28 xl:-left-20 top-12 xl:top-full  ">
+            <div className="bg-gray-400  xl:-ml-0 p-12 xl:p-20 w-80 h-52  ">
               llama animation
             </div>
             <div className="flex mt-10 ">

@@ -8,8 +8,8 @@ import { FaLinkedinIn } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="footer p-0    relative  sm:bottom-10 -bottom-32 md:top-52 -ml-28 -mr-20 -pl-1 pr-0   bg-black text-white ">
-      <div className="p-16 pl-32 mb-72 md:mb-0     ">
+    <footer className="footer p-0    relative  sm:bottom-10 -bottom-32 md:top-52 -ml-28 xl:-mr-20 -pl-1 pr-0   bg-black text-white ">
+      <div className="p-16 pl-32 mb-64 md:mb-0     ">
         <img
           src={Logo}
           alt="Logo"
@@ -32,25 +32,25 @@ const Footer = () => {
           <p className="text-gray-400">Careers</p>
           <p className="text-gray-400">Blogs</p>
         </div>
-        <div className=" pl-80 -mt-36 md:-mt-0 md:pl-0 w-full">
-          <h1 className="flex-initial mb-4  w-32 md:w-64">Events</h1>
+        <div className=" float-right mr-10 pt-2 xl:pt-0 -mt-36 xl:mt-0 ">
+          <h1 className=" mb-4  w-32 md:w-64">Events</h1>
           <p className="text-gray-400">About Our Events</p>
           <p className="text-gray-400">Ostello's Fest</p>
         </div>
-        <div className=" pl-40 mt-28 md:mt-0 md:pl-0  w-full">
+        <div className=" pl-40  mt-20  md:mt-0 md:pl-0  w-full">
           <h1 className=" flex-initial mb-4 w-64 ">Contact Us</h1>
           <p className="text-gray-400">FAQs</p>
           <p className="text-gray-400">Support</p>
         </div>
-        <div className=" pl-80 -mt-24 md:-mt-0 md:pl-0 mb-10 flex-initial   ">
+        <div className=" float-right -mt-24 xl:mt-0   ">
           <h1 className="mb-4">Terms of Use</h1>
-          <p className="flex-initial w-44  text-gray-400">Terms & Conditions</p>
+          <p className=" w-44  text-gray-400">Terms & Conditions</p>
           <p className="text-gray-400">Privacy Policy</p>
           <p className="text-gray-400">Refund Policy</p>
           <p className="text-gray-400">Trust & Safety</p>
         </div>
       </div>
-      <h3 className="text-center ml-10 -mt-32  md:mt-10 md:ml-96   ">
+      <h3 className="text-center pl-28  -mt-20  md:mt-10 md:ml-96   ">
         2022 ©️ Ostello India Private Limited.
       </h3>
     </footer>
