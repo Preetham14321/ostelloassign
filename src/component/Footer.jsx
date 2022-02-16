@@ -70,8 +70,8 @@ import {
 // import { Link } from "react-router-dom";
 const Footer = ({ className }) => {
   return (
-    <footer className="text-white   font-dm-sans w-screen bg-slate  px-20 py-6  lg:px-12 space-y-8">
-      <div className="flex flex-col space-y-12 lg:space-y-0 lg:space-x-6  lg:flex-row">
+    <footer className="text-white   font-dm-sans w-screen bg-slate  px-20 py-6  lg:px-12  space-y-8">
+      <div className="flex flex-col space-y-12 lg:space-y-0 lg:space-x-6  lg:flex-row xl:w-11/12 ">
         <div className="flex flex-col items-center space-y-4 w-full lg:w-1/6 lg:items-start">
           <img src={Logo} alt="" className="h-12" />
           <div className="flex space-x-2 items-center">
@@ -123,9 +123,7 @@ const Footer = ({ className }) => {
           </div>
         </div>
       </div>
-      <div className="text-center lg:text-left">
-        2022 ©️ Ostello India Private Limited
-      </div>
+      <div className="text-center">2022 ©️ Ostello India Private Limited</div>
     </footer>
   );
 };
