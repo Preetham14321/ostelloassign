@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import Logo from "../assets/ostelloLogo.png";
 
-import { HiMenu } from "react-icons/hi";
-import { HiX } from "react-icons/hi";
+// import { HiMenu } from "react-icons/hi";
+// import { HiX } from "react-icons/hi";
 import { HiLocationMarker } from "react-icons/hi";
 import { HiPhone } from "react-icons/hi";
 import { HiOutlineMail } from "react-icons/hi";
@@ -20,7 +20,7 @@ const Contactus = () => {
   const [nameValue, setNameValue] = useState("");
   const [emailValue, setEmailValue] = useState("");
   const [messageValue, setMessageValue] = useState("");
-  const [showMenu, setShowMenu] = useState(false);
+  // const [showMenu, setShowMenu] = useState(false);
 
   const submitHandler = () => {
     nameValue.length < 1 ? setName(true) : setName(false);
