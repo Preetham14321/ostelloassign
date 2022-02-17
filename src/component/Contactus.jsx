@@ -53,22 +53,22 @@ const Contactus = () => {
         <div
           className={
             // (showMenu ? "visible " : "invisible xl:visible") +
-            " invisible xl:visible xl:flex  xl:gap-20 xl:pl-4 xl:mt-10 relative top-20   mr-4 xl:mr-0  bg-violet z-30  xl:top-0 xl:bg-opacity-0 rounded-lg   "
+            " invisible lg:visible lg:flex  lg:gap-20 lg:pl-4 lg:mt-10 relative    mr-4 xl:mr-0   z-30  xl:top-0 xl:bg-opacity-0 rounded-lg   "
           }
         >
           <div className="mb-2 xl:mb-0">Buy a Course</div>
           <div className="mb-2 xl:mb-0">Community</div>
           <div className="mb-2 xl:mb-0 ">Scholarship</div>
-          <div className="lg:float-right lg:gap-20 xl:ml-40  lg:flex lg:flex-wrap">
-            <div className=" mb-2 xl:mb- ">List your Institute</div>
+        </div>
+        <div className="lg:float-right invisible lg:visible xl:-mt-5 xl:pr-32 lg:-mt-8   xl:gap-20 xl:ml-52  lg:flex lg:flex-wrap ">
+          <div className=" mb-2 xl:mb- ">List your Institute</div>
 
-            <button className="bg-violet text-white pl-3 pr-3 pb-1 rounded-xl ml-24 xl:ml-0 mb-2 xl:mb-0 ">
-              Login
-            </button>
-          </div>
+          <button className="bg-violet text-white pl-3 pr-3 pb-1  rounded-xl ml-10 mr-10 xl:mr-0  xl:ml-0 mb-2 xl:mb-0 ">
+            Login
+          </button>
         </div>
 
-        <div className="bg-white w-80       xl:w-11/12  relative  block m-auto   pt-10 xl:top-32 z-10 xl:pl-20 xl:pr-20 xl:pt-10 rounded-3xl mb-52 ">
+        <div className="bg-white w-80   md:w-9/12     relative  block m-auto md:pl-32  lg:w-10/12   pt-10 xl:top-32 z-10  lg:pl-12 xl:pl-20 lg:pr-20 lg:mt-20 xl:mt-0 xl:pt-10 rounded-3xl mb-52 ">
           <div className="">
             <p className="font-semibold pl-8 xl:pl-0 ">say hi to the team:)</p>
             <h1 className="font-semibold text-4xl xl:text-7xl text-violet mb-6 pl-8 xl:pl-0 mt-4">
@@ -81,7 +81,7 @@ const Contactus = () => {
           </div>
           <form
             action=""
-            className="xl:flex xl:flex-col pl-2 w-64 xl:-ml-0 xl:mt-10 "
+            className="lg:flex lg:flex-col pl-2 w-64 lg:-ml-0 lg:mt-10 "
           >
             <label htmlFor="name" className="">
               Your Name
@@ -132,7 +132,7 @@ const Contactus = () => {
           >
             Submit
           </button>
-          <div className=" block m-auto relative xl:float-right xl:bottom-96 xl:-mt-28 xl:-left-20 top-12 xl:top-full  ">
+          <div className=" block m-auto relative lg:float-right lg:absolute lg:left-2/4 lg:pl-10 xl:pl-0  xl:relative xl:bottom-96 xl:-mt-28 xl:-left-20 top-12 xl:top-full  ">
             <div className="bg-gray  xl:-ml-0 p-12 xl:p-20 w-80 h-52  ">
               llama animation
             </div>
