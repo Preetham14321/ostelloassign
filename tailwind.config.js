@@ -1,10 +1,3 @@
-// module.exports = {
-//   content: ["./src/**/*.{html,js,jsx}"],
-//   theme: {
-//     extend: {}
-//   },
-//   plugins: []
-// };
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   mode: "jit",
@@ -20,6 +13,7 @@ module.exports = {
       ghost: "#9A9AA9",
       black: "#000000",
       slate: "#222222",
+      "light-slate": "#a894947a",
       gray: "#717171",
       "light-gray": "#f2f2f2",
       cloud: "#fafafb",
