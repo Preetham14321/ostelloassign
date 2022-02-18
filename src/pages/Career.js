@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import BackgroundGradient from "../assets/background/landing_gradient.png";
 import Footer from "../component/Footer";
 import NavHeader from "../component/NavHeader";
@@ -9,7 +9,9 @@ const Career = () => {
     width: document.documentElement.clientWidth,
     height: document.documentElement.clientHeight
   });
-
+  useEffect(() => {
+    setViewPort("");
+  }, []);
   const jobs = [
     {
       id: "1",

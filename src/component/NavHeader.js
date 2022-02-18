@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import LogoWithTitle from "../assets/logo_title.svg";
 import { BsFillGridFill } from "react-icons/bs";
 const NavHeader = ({
@@ -8,8 +8,8 @@ const NavHeader = ({
   isAuth = window.localStorage.getItem("ACCESS_TOKEN") !== null,
   isLanding = false
 }) => {
-  const navigate = useNavigate();
-  const location = useLocation();
+  //   const navigate = useNavigate();
+  //   const location = useLocation();
   return (
     <nav
       className={`${className} flex justify-center items-center space-x-8 py-4 px-4 lg:pr-8 font-dm-sans bg-transparent`}

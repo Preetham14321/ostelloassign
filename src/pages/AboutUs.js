@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment, useState, useEffect } from "react";
 import NavHeader from "../component/NavHeader";
 import BackgroundGradient from "../assets/background/landing_gradient.png";
 import Footer from "../component/Footer";
@@ -13,6 +13,10 @@ const AboutUs = () => {
     width: document.documentElement.clientWidth,
     height: document.documentElement.clientHeight
   });
+
+  useEffect(() => {
+    setViewPort("");
+  }, []);
 
   const [showMark, setShowMark] = useState(false);
 
@@ -33,10 +37,6 @@ const AboutUs = () => {
     { width: 768, itemsToShow: 3 },
     { width: 1200, itemsToShow: 4 }
   ];
-
-  const subscribeHandler = () => {
-    setShowMark(true);
-  };
 
   return (
     <Fragment>
